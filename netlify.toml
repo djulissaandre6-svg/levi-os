@@ -1,0 +1,9 @@
+# Tells Netlify: the website is the "public" folder, and the server functions
+# live in netlify/functions. No build step is needed — bundle.js is already built.
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
